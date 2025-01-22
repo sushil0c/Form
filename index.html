@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>दृष्टिविहीन व्यक्तिहरूप्रतिको धारणा र अनुभव</title>
+    <link rel="stylesheet" href="c.css">
+    <script src="a.js " befor" ></script>
+</head>
+<body>
+    <h1>दृष्टिविहीन व्यक्तिहरूप्रतिको धारणा र अनुभव</h1>
+    <p>
+दृष्टिविहिनहरूप्रती कक्षा १२ मा अध्ययनरत विद्यार्थि तथा शिक्षकहरूको धारणा के कस्तो रहेको छ भन्ने जानकारी प्राप्त गर्ने उदेश्यले यो सर्वे तयार पारिएको हुँदा यहाँहरू सम्पूर्णले उल्लिखित प्रश्नको सतिक र इमानदारिताका साथ उत्तर दिनु हुन अनुरोध गरिन्छ। साथै यहाँहरूको प्रतिक्रियाले यस्ता व्यक्तिहरूलाई आफ्ना दैनिकी तथा समग्र जीवन सरलताका साथ बेथित गर्ने पृष्ठ पोषण पक्कै पनि मिल्नेछ भन्ने अपेक्षा पनि राखेको छ। त्यसैले सक्दो धेरै सङ्ख्याका मानिसहरूको विचार यस सर्वेमा सहभागि हुनेछ भन्ने विश्वास पनि राखेको छु। आफ्ना महत्वपूर्ण धारणाका लागि अग्रिम धन्यवाद ज्ञापन गर्दछु।    </p>
+
+    <form id="surveyForm">
+        <fieldset>
+            <legend>१. कृपया आफ्नो नाम र इमेल ठेगाना लेख्नुहोस्:</legend>
+            <label for="userName">नाम:</label>
+            <input type="text" id="userName" name="userName" required placeholder="तपाईंको नाम लेख्नुहोस्"><br>
+
+            <label for="userEmail">इमेल ठेगाना:</label>
+            <input type="email" id="userEmail" name="userEmail" required placeholder="तपाईंको इमेल ठेगाना लेख्नुहोस्"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>२. दृष्टिविहीन व्यक्तिहरूलाई सहयोग गर्न तपाईं कुन विकल्पलाई प्राथमिकता दिनुहुन्छ?</legend>
+            <label><input type="radio" name="help_preference" value="training" required> आत्मनिर्भर बन्न तालिम दिनु</label><br>
+            <label><input type="radio" name="help_preference" value="technology"> उनीहरूको लागि प्रविधि उपलब्ध गराउनु</label><br>
+            <label><input type="radio" name="help_preference" value="empathy"> सहानुभूतिपूर्ण व्यवहार देखाउनु</label><br>
+            <label><input type="radio" name="help_preference" value="financial_support"> आर्थिक सहयोग प्रदान गर्नु</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>३. दृष्टिविहीन व्यक्तिहरूले पढ्नका लागि तपाईंले सुन्नुभएको प्रमुख साधन कुन हो?</legend>
+            <label><input type="radio" name="reading_tool" value="braille" required> ब्रेल</label><br>
+            <label><input type="radio" name="reading_tool" value="screen_reader"> स्क्रीन रिडर</label><br>
+            <label><input type="radio" name="reading_tool" value="audio_book"> अडियो पुस्तक</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>४. तपाईंको विद्यालयमा दृष्टिविहीन विद्यार्थीहरूलाई कसरी सहयोग पुर्‍याउन सकिन्छ?</legend>
+            <label><input type="radio" name="support_method" value="digital_materials" required> अध्ययन सामग्रीलाई डिजिटल बनाइने</label><br>
+            <label><input type="radio" name="support_method" value="teacher_training"> शिक्षक र विद्यार्थीका लागि तालिमको व्यवस्था गरिने</label><br>
+            <label><input type="radio" name="support_method" value="assistive_devices"> सहायक उपकरण (जस्तै: ब्रेल, स्क्रीन रिडर) उपलब्ध गराउने</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>५. तपाईंलाई के लाग्छ, दृष्टिविहीन व्यक्तिहरूलाई समाजले कत्तिको सम्मान गर्छ?</legend>
+            <label><input type="radio" name="respect" value="very_respectful" required> अत्यन्त सम्मानजनक व्यवहार</label><br>
+            <label><input type="radio" name="respect" value="average_respect"> औसत सम्मान</label><br>
+            <label><input type="radio" name="respect" value="somewhat_respect"> केही हदसम्म मात्र सम्मान</label><br>
+            <label><input type="radio" name="respect" value="low_respect"> सम्मान दिनमा कमीकमजोरी छ</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>६. तपाईं दृष्टिविहीन व्यक्तिहरूसँग व्यवहार गर्दा आफूलाई सहज महसुस गर्नुहुन्छ?</legend>
+            <label><input type="radio" name="interaction_comfort" value="very_comfortable" required> बिल्कुलै सहज</label><br>
+            <label><input type="radio" name="interaction_comfort" value="somewhat_comfortable"> केही हदसम्म सहज</label><br>
+            <label><input type="radio" name="interaction_comfort" value="neutral"> तटस्थ</label><br>
+            <label><input type="radio" name="interaction_comfort" value="somewhat_uncomfortable"> केही हदसम्म असहज</label><br>
+            <label><input type="radio" name="interaction_comfort" value="very_uncomfortable"> बिल्कुलै असहज</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>७. दृष्टिविहीन व्यक्तिहरूले रोजगारी प्राप्त गर्नका लागि सबैभन्दा ठूलो चुनौती के होला?</legend>
+            <label><input type="radio" name="employment_challenge" value="education_gap" required> शिक्षाको अभाव</label><br>
+            <label><input type="radio" name="employment_challenge" value="societal_attitude"> सामाजिक दृष्टिकोण</label><br>
+            <label><input type="radio" name="employment_challenge" value="technology_access"> प्रविधिको पहुँचको कमी</label><br>
+            <label><input type="radio" name="employment_challenge" value="other"> अन्य</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>८. तपाईंलाई के लाग्छ, दृष्टिविहीन व्यक्तिहरूलाई सार्वजनिक स्थानहरूमा कत्तिको सहज पहुँच छ?</legend>
+            <label><input type="radio" name="public_access" value="high_access" required> उच्च पहुँच</label><br>
+            <label><input type="radio" name="public_access" value="moderate_access"> मध्यम पहुँच</label><br>
+            <label><input type="radio" name="public_access" value="low_access"> कम पहुँच</label><br>
+            <label><input type="radio" name="public_access" value="no_access"> कुनै पहुँच छैन</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>९. तपाईंको विचारमा दृष्टिविहीन व्यक्तिहरूलाई प्रोत्साहन गर्न विद्यालयमा कस्तो नीति ल्याउनु पर्छ?</legend>
+            <textarea name="policy_suggestion" rows="4" placeholder="आफ्नो विचार यहाँ लेख्नुहोस्"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>१०. तपाईंले दृष्टिविहीन व्यक्तिहरूसँग अन्तर्क्रिया गर्दा सबैभन्दा ठूलो चुनौती के महसुस गर्नुभएको छ?</legend>
+            <label><input type="radio" name="interaction_challenge" value="communication_barriers" required> सञ्चारको अवरोध</label><br>
+            <label><input type="radio" name="interaction_challenge" value="lack_of_awareness"> सचेतना को कमी</label><br>
+            <label><input type="radio" name="interaction_challenge" value="attitudinal_barriers"> मानसिकता सम्बन्धी अवरोध</label><br>
+            <label><input type="radio" name="interaction_challenge" value="physical_accessibility"> शारीरिक पहुँचको कमी</label><br>
+            <textarea name="interaction_challenge_details" rows="4" placeholder="आफ्नो अनुभव उल्लेख गर्नुहोस्"></textarea>
+        </fieldset>
+
+        <button type="submit">जवाफ पठाउनुहोस्</button>
+    </form>
+
+    <p id="welcomeMessage"></p>
+</body>
+</html>

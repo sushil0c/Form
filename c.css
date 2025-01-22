@@ -1,0 +1,97 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    color: #333;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    color: #004d40;
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+/* Paragraph Styling */
+p {
+    margin: 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #004d40;
+}
+
+/* Form Styling */
+form {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset Styling */
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #80deea;
+    border-radius: 8px;
+    background-color: #e0f2f1;
+}
+
+legend {
+    font-weight: bold;
+    color: #00796b;
+}
+
+/* Label and Input Styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+input[type="radio"], input[type="text"], input[type="email"], textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #00796b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+/* Welcome Message */
+#welcomeMessage {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #00796b;
+    margin-top: 20px;
+}
