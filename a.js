@@ -1,9 +1,10 @@
-document.getElementById("surveyForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission
 
-    const name = document.getElementById("userName").value;
-    const email = document.getElementById("userEmail").value;
-    const formData = new FormData(this);
+document.getElementById("surveyForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+
+    const name = document.getElementById("userName").value;  // Get user name input
+    const email = document.getElementById("userEmail").value;  // Get user email input
+    const formData = new FormData(this);  // Create FormData object from the form
 
     // Display a welcome message
     const welcomeMessage = document.getElementById("welcomeMessage");
@@ -17,14 +18,14 @@ document.getElementById("surveyForm").addEventListener("submit", function (event
             Accept: "application/json",
         },
     })
-        .then((response) => {
-            if (response.ok) {
-                welcomeMessage.textContent += " तपाईंको जवाफ सफलतापूर्वक पठाइयो।";
-            } else {
-                welcomeMessage.textContent += " क्षमा गर्नुहोस्, केही समस्या भयो। कृपया पुनः प्रयास गर्नुहोस्।";
-            }
-        })
-        .catch(() => {
+    .then((response) => {
+        if (response.ok) {
+            welcomeMessage.textContent += " तपाईंको जवाफ सफलतापूर्वक पठाइयो।";
+        } else {
             welcomeMessage.textContent += " क्षमा गर्नुहोस्, केही समस्या भयो। कृपया पुनः प्रयास गर्नुहोस्।";
-        });
+        }
+    })
+    .catch(() => {
+        welcomeMessage.textContent += " क्षमा गर्नुहोस्, केही समस्या भयो। कृपया पुनः प्रयास गर्नुहोस्।";
+    });
 });
