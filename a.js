@@ -1,16 +1,14 @@
-
 document.getElementById("surveyForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the form from submitting the traditional way
+    event.preventDefault(); // Prevent the form from submitting immediately
 
-    const name = document.getElementById("userName").value;  // Get user name input
-    const email = document.getElementById("userEmail").value;  // Get user email input
-    const formData = new FormData(this);  // Create FormData object from the form
+    const name = document.getElementById("userName").value;  // Get the name entered by the user
+    const formData = new FormData(this);  // Get all form data
 
-    // Display a welcome message
+    // Display the welcome message
     const welcomeMessage = document.getElementById("welcomeMessage");
     welcomeMessage.textContent = `धन्यवाद, ${name}! सर्भेमा सहभागी हुनु भएकोमा धेरै धेरै धन्यवाद। यो डाटा सुरक्षित रहनेछ।`;
 
-    // Send form data to Formspree
+    // Send the form data to Formspree
     fetch("https://formspree.io/f/xnqekgaa", {
         method: "POST",
         body: formData,
